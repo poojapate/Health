@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MonthlyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#EC0505"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+
+            <ImageView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2sp"
+                android:layout_toLeftOf="@id/money"
+                android:src="@drawable/ic_baseline_currency_rupee_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2sp"
+                android:layout_toLeftOf="@id/close"
+                android:text="399"
+                android:textColor="#fff"
+                android:textSize="23sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20sp"
+                android:src="@drawable/ic_baseline_close_24">
+
+            </ImageView>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Secure Card"
+                android:padding="20sp"
+                android:textStyle="normal"
+                android:textColor="#B39292"
+                android:textSize="20sp">
+
+            </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="5dp"
+                android:layout_marginHorizontal="20sp"
+                android:background="#F6F1F1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="XXXX XXXX XXXX XXXX"
+                        android:padding="10dp"
+                        android:textColor="#000"
+                        android:textStyle="normal"
+                        android:textSize="21sp">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="normal"
+                        android:textColor="#4CAF50"
+                        android:text="Phone: +9....00000">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="normal"
+                        android:background="@drawable/background"
+                        android:layout_marginStart="5dp"
+                        android:textColor="#C61E1E"
+                        android:text="Veriyfy Mobile No">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="23sp"
+                        android:textColor="#575252"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:text="Select Payment Option">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingVertical="10dp"
+                        android:id="@+id/card"
+                        android:layout_marginHorizontal="20sp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_credit_card_24">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Card"
+                            android:padding="5dp"
+                            android:textColor="#000"
+                            android:textStyle="normal"
+                            android:textSize="23sp">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:background="#F4F1F1"
+                        android:id="@+id/caurd"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20sp"
+                            android:textStyle="normal"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#915E5E"
+                            android:text="Debit card and credit card are supported">
+
+                        </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/background"
+                            android:paddingVertical="10dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:hint="Card Number"
+                                android:layout_marginStart="10dp"
+                                android:textSize="20sp">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/background"
+                            android:paddingVertical="10dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Card Holder Name "
+                                android:layout_marginStart="10dp"
+                                android:background="@null">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/background"
+                            android:paddingVertical="10dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="MM/yy"
+                                android:layout_marginStart="10dp"
+                                android:background="@null">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/background"
+                            android:paddingVertical="10dp">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="CVV"
+                                android:layout_marginStart="10dp"
+                                android:background="@null">
+
+                            </EditText>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="@drawable/background"
+                            android:paddingVertical="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:text="Pay Now">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+                android:id="@+id/Upi"
+            android:layout_marginHorizontal="20sp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_credit_card_24">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="23sp">
+
+            </TextView>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:id="@+id/upi1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20sp"
+                android:background="#FBF7F7">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background"
+                        android:padding="20sp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="20sp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/background"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background"
+                        android:padding="20sp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background"
+                        android:padding="20sp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background"
+                        android:padding="20sp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:padding="10sp"
+                    android:background="@drawable/background">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="Enter UPI or Phone Number">
+
+                    </EditText>
+
+                </LinearLayout>
+               <CheckBox
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="4dp"
+                   android:text="Save UPI ID"
+                   android:clickable="true">
+
+               </CheckBox>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:padding="10sp"
+                    android:background="@drawable/background">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="normal"
+                       android:text="Verify and pay">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="20sp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_credit_card_24">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wallets"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="23sp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+                android:id="@+id/net"
+            android:layout_marginHorizontal="20sp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_credit_card_24">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Net Banking "
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textStyle="normal"
+                android:textSize="23sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/banking"
+                android:background="#F6F4F4"
+                android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img2"
+                        android:paddingHorizontal="20sp"
+                        android:text="Kotak"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginStart="20sp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img3"
+                        android:paddingHorizontal="20sp"
+                        android:text="HDFC"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img4"
+                        android:paddingHorizontal="25sp"
+                        android:text="ICIC"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginStart="20sp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img5"
+                        android:paddingHorizontal="33sp"
+                        android:text="SBI"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img"
+                        android:paddingHorizontal="1sp"
+                        android:text="PNB Retail"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginStart="20sp"
+                    android:background="@drawable/background">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_baseline_credit_card_24">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img1"
+                        android:paddingHorizontal="25sp"
+                        android:text="Axis"
+                        android:textColor="#000"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

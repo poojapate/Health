@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SubsciptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/ic_baseline_arrow_back_24">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subscription"
+            android:paddingVertical="10dp"
+            android:layout_marginStart="20sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ON WORK"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="35sp"
+            android:textStyle="bold"
+            android:textColor="#6E6060">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unlimited Workout"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20sp"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:textColor="#000">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="daily work"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20sp"
+            android:textStyle="normal"
+            android:textColor="#000">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fit your body"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20sp"
+            android:textStyle="normal"
+            android:textColor="#000">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:id="@+id/card1"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="20sp"
+            app:cardBackgroundColor="#1835D6"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:layout_marginTop="40sp"
+                android:textStyle="bold"
+                android:id="@+id/plan"
+                android:layout_marginStart="20sp"
+                android:textColor="#000"
+                android:textSize="25sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR 399"
+                android:layout_marginTop="40sp"
+                android:gravity="end"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/mothly"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="25sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:id="@+id/card2"
+            app:cardBackgroundColor="#1835D6"
+            app:cardCornerRadius="20sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:layout_marginStart="20sp"
+                android:textColor="#000"
+                android:id="@+id/anual"
+                android:layout_marginTop="40sp"
+                android:textStyle="bold"
+                android:textSize="25sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR 199"
+                android:layout_marginTop="40sp"
+                android:gravity="end"
+                app:cardBackgroundColor="@color/purple_500"
+                android:id="@+id/amaount"
+                android:textColor="#000"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="25sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:id="@+id/card3"
+            app:cardBackgroundColor="#1835D6"
+            app:cardCornerRadius="20sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nthly"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40sp"
+                android:id="@+id/free"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="25sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INR 0"
+                android:layout_marginTop="40sp"
+                android:gravity="end"
+                android:id="@+id/trail"
+                android:textColor="#000"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="25sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="#2196F3"
+        android:layout_marginHorizontal="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:id="@+id/subscription"
+            android:text="subscription">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

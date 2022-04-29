@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Expert"
+        android:title="EXPERT VIDIO"
+        android:icon="@drawable/expertvidio">
+
+    </item>
+    <item android:id="@+id/selfvidio"
+        android:title="SELF VIDIO"
+        android:icon="@drawable/selfvidio">
+
+    </item>
+    <item android:id="@+id/profile"
+        android:title="PROFILE"
+        android:icon="@drawable/ic_baseline_camera_alt_24">
+
+    </item>
+    <item android:id="@+id/More"
+        android:title="More"
+        android:icon="@drawable/more">
+
+    </item>
+</menu>

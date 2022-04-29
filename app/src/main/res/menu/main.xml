@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:title="user">
+       <menu>
+           <item android:title="login"
+               android:icon="@drawable/ic_baseline_login_24"
+               >
+
+           </item>
+           <item android:title="chat"
+               android:icon="@drawable/ic_baseline_chat_24"
+               >
+
+           </item>
+           <item android:title="group"
+               android:icon="@drawable/ic_baseline_group_24"
+               >
+
+           </item>
+
+
+       </menu>
+
+   </item>
+    <item android:title="App">
+        <menu>
+            <item android:title="setting"
+                android:icon="@drawable/ic_baseline_settings_24">
+
+            </item>
+            <item android:title="help"
+                android:icon="@drawable/ic_baseline_help_24"
+                >
+
+            </item>
+
+
+        </menu>
+    </item>
+</menu>

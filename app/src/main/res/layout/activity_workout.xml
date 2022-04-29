@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WorkoutActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        android:id="@+id/fram">
+
+    </FrameLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="#D61E10"
+        app:itemIconTint="#D61E10"
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/bottomnav"
+        app:menu="@menu/botton_nav">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>

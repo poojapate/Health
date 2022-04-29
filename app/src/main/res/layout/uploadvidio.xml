@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/radius"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="end">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/close"
+            android:src="@drawable/ic_baseline_close_24">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="20sp">
+
+            <VideoView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/vidio">
+
+            </VideoView>
+
+<!--            <com.google.android.exoplayer2.ui.PlayerView-->
+<!--                android:id="@+id/vidio"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                app:resize_mode="fit"-->
+<!--                app:hide_on_touch="true"-->
+<!--                app:show_timeout="5000"-->
+<!--                app:rewind_increment="10000"-->
+<!--                app:fastforward_increment="10000"-->
+<!--                app:use_controller="true"-->
+<!--                android:background="@android:color/background_dark"-->
+<!--                app:player_layout_id="@layout/exo_player_view"-->
+<!--                app:controller_layout_id="@layout/custom_controller"-->
+<!--                />-->
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="#E10E0E"
+            android:paddingVertical="5dp"
+           android:paddingHorizontal="25sp"
+            android:id="@+id/selectVidio"
+           android:background="@drawable/background"
+            android:text="Upload Video">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:background="#F8F5F5"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:background="@null"
+            android:hint="Enter Video Name">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="20sp"
+        android:background="#F8F5F5"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="Enter Description">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:background="@drawable/background"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:id="@+id/sumit"
+            android:gravity="center"
+            android:text="Submit">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp">
+
+    </LinearLayout>
+
+</LinearLayout>

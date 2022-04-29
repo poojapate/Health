@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rahul">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.Rahul">
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Activity.WorkoutActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MonthsecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MonthlyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SubsciptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegistrationActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Activity.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.StartActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".GallaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EmplisetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MessageSendActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
